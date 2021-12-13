@@ -51,40 +51,6 @@
             };
         }
     </script>
-
-    <script>
-      // Set the date we're counting down to
-      var countDownDate = new Date("Dec 17, 2021 00:00:00").getTime();
-    
-      // Update the count down every 1 second
-      var x = setInterval(function() {
-    
-      // Get today's date and time
-      var now = new Date().getTime();
-    
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-    
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-      // Display the result in the element with id="countdown"
-      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-
-      
-    
-      // If the count down is finished, write PRE SALE DAY!
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown").innerHTML = "PRE SALE DAY!";
-        }
-      }, 1000);
-    </script>
-
     <link href="https://static.web-repository.com/styles/platform.client.min.css?v=855" type="text/css" rel="stylesheet" />
     <link rel="preload stylesheet" as="style" href="https://static.web-repository.com/t/theme25/css/trunk.min.css?v=855" id="style-default" class="stylesheet" />
 
@@ -242,7 +208,7 @@
                                                     <li class="middle"></li>
                                                     <li class="after"></li>
                                                 </ul>
-                                                <div class="overlay overlay-scale " style="background-image: url('https://content.app-sources.com/s/94525561323633862/uploads/Images/CLOUDS_1400x1400_SCATTER_v3-9181529.png');">
+                                                <div class="overlay overlay-scale " style="background-color: rgba(255, 255, 255, 1);">
 
                                                     <nav class="mobile-headerBackgroundColor">
                                                         <ul class="clearfix">
@@ -327,7 +293,7 @@
                                     <div class="widget 
           widgetResponsive textWidget col7" id="text-widget-1537636542474" data-type="TextWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0px; margin-left: 0%;">
                                         <div class="text-widget-content">
-                                            <h3 style="text-align: center; line-height: 1.4;"><span style="color: rgb(255, 255, 255); font-size: 15px; font-weight: 700; font-family: game;"><p style="text-align: center; "><br></p>
+                                            <p style="text-align: center; "><br></p>
                                         </div>
                                     </div>
                                 </div>
@@ -435,7 +401,11 @@
                                     <div class="widget 
           widgetResponsive countdownWidget col20" id="countdown-widget-1638312706020" data-type="CountdownWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 6.75991%; margin-left: 0px;">
                                         <div class="main-widget-content">
-                                            <p style="text-align: center; line-height: 1.4;"><span style="color: rgb(255, 255, 255); font-size: 24px; font-weight: 700; font-family: game;"><p id="countdown"></span></p>
+                                            <div class="flip-wrapper col20 f-left flip-at-center flip-medium flip-with-labels  ">
+                                                <div class="flip-countdown" data-type="date" data-date="1639756800000" data-hours="931" data-minutes="52" data-seconds="2" data-start="100" data-end="0" data-interval="1" data-reset="false" data-link="/Book-A-Call" data-target="_self" data-onend="" data-showdays="true"
+                                                    data-showseconds="true" data-color="rgba(255, 255, 255, 1)" data-labelcolor="rgba(255, 255, 255, 1)" data-labelsize="14" data-bgcolor="transparent" data-size="43" data-uid="1638312706020"></div>
+                                                <div class="flip-countdown-end none-soft col20 f-left">
+
                                                 </div>
                                             </div>
                                         </div>
@@ -499,8 +469,11 @@
                                 <div class="widget-row with-centered-content">
                                     <div class="widget 
          mobile-only  widgetResponsive countdownWidget col20" id="countdown-widget-1638652888995" data-type="CountdownWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0%; margin-left: 0px;">
-                                        <div class="main-widget-content">
-                                            <p style="text-align: center; line-height: 1.4;"><span style="color: rgb(255, 255, 255); font-size: 24px; font-weight: 700; font-family: game;"><p id="countdown"></span></p>
+                                    <div class="main-widget-content">
+                                        <div class="flip-wrapper col20 f-left flip-at-center flip-medium flip-with-labels  ">
+                                            <div class="flip-countdown" data-type="date" data-date="1639756800000" data-hours="931" data-minutes="52" data-seconds="2" data-start="100" data-end="0" data-interval="1" data-reset="false" data-link="/Book-A-Call" data-target="_self" data-onend="" data-showdays="true"
+                                                data-showseconds="true" data-color="rgba(255, 255, 255, 1)" data-labelcolor="rgba(255, 255, 255, 1)" data-labelsize="14" data-bgcolor="transparent" data-size="43" data-uid="1638312706020"></div>
+                                            <div class="flip-countdown-end none-soft col20 f-left">
                                                     </div>
                                                 </div>
                                             </div>
