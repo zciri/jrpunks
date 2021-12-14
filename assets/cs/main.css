@@ -109,7 +109,7 @@
 .note-editable.panel-body h1,
 .text-widget-content h1,
 .post-description h1 {
-    font-family: Open Sans, arial;
+    font-family: game, arial;
     line-height: 1em;
     font-size: 72px;
     color: #3e3e3e;
@@ -119,7 +119,7 @@
 .note-editable.panel-body h2,
 .text-widget-content h2,
 .post-description h2 {
-    font-family: Open Sans, arial;
+    font-family: game, arial;
     line-height: 1em;
     font-size: 42px;
     color: #3e3e3e;
@@ -129,7 +129,7 @@
 .note-editable.panel-body h3,
 .text-widget-content h3,
 .post-description h3 {
-    font-family: Open Sans, arial;
+    font-family: game, arial;
     line-height: 1em;
     font-size: 32px;
     color: #3e3e3e;
@@ -139,7 +139,7 @@
 .note-editable.panel-body h4,
 .text-widget-content h4,
 .post-description h4 {
-    font-family: Open Sans, arial;
+    font-family: game, arial;
     line-height: 1em;
     font-size: 24px;
     color: #3e3e3e;
@@ -149,7 +149,7 @@
 .note-editable.panel-body h5,
 .text-widget-content h5,
 .post-description h5 {
-    font-family: Open Sans, arial;
+    font-family: game, arial;
     line-height: 1em;
     font-size: 18px;
     color: #3e3e3e;
@@ -159,7 +159,7 @@
 .note-editable.panel-body h6,
 .text-widget-content h6,
 .post-description h6 {
-    font-family: Open Sans, arial;
+    font-family: game, arial;
     line-height: 1em;
     font-size: 15px;
     color: #3e3e3e;
@@ -171,7 +171,7 @@
 .note-editable.panel-body p,
 .text-widget-content p,
 .post-description p {
-    font-family: Open Sans, arial;
+    font-family: game, arial;
     line-height: 1.6em;
     font-size: 15px;
     color: #3e3e3e;
@@ -183,7 +183,7 @@
 .note-editable.panel-body blockquote,
 .text-widget-content blockquote,
 .post-description blockquote {
-    font-family: Open Sans, arial;
+    font-family: game, arial;
     line-height: 1.6em;
     font-size: 15px;
     color: #3e3e3e;
@@ -195,7 +195,7 @@ body {}
 @media screen and (max-width: 768px) {
     .note-editable.panel-body h1,
     .text-widget-content h1 {
-        font-family: Open Sans;
+        font-family: game;
         line-height: 1em;
         font-size: 48px !important;
         color: #3e3e3e;
@@ -203,7 +203,7 @@ body {}
     }
     .note-editable.panel-body h2,
     .text-widget-content h2 {
-        font-family: Open Sans;
+        font-family: game;
         line-height: 1em;
         font-size: 32px !important;
         color: #3e3e3e;
@@ -211,7 +211,7 @@ body {}
     }
     .note-editable.panel-body h3,
     .text-widget-content h3 {
-        font-family: Open Sans;
+        font-family: game;
         line-height: 1em;
         font-size: 26px !important;
         color: #3e3e3e;
@@ -219,7 +219,7 @@ body {}
     }
     .note-editable.panel-body h4,
     .text-widget-content h4 {
-        font-family: Open Sans;
+        font-family: game;
         line-height: 1em;
         font-size: 22px !important;
         color: #3e3e3e;
@@ -227,7 +227,7 @@ body {}
     }
     .note-editable.panel-body h5,
     .text-widget-content h5 {
-        font-family: Open Sans;
+        font-family: game;
         line-height: 1em;
         font-size: 18px !important;
         color: #3e3e3e;
@@ -235,7 +235,7 @@ body {}
     }
     .note-editable.panel-body h6,
     .text-widget-content h6 {
-        font-family: Open Sans;
+        font-family: game;
         line-height: 1em;
         font-size: 14px !important;
         color: #3e3e3e;
@@ -245,7 +245,7 @@ body {}
     .text-widget-content li,
     .note-editable.panel-body p,
     .text-widget-content p {
-        font-family: Open Sans;
+        font-family: game;
         line-height: 1.6em;
         font-size: 14px !important;
         color: #3e3e3e;
@@ -255,7 +255,7 @@ body {}
     .text-widget-content blockquote>p,
     .note-editable.panel-body blockquote,
     .text-widget-content blockquote {
-        font-family: Open Sans;
+        font-family: game;
         line-height: 1.6em;
         font-size: 14px !important;
         color: #3e3e3e;
@@ -305,13 +305,11 @@ width: calc(1100px - 130px) !important;
 
 .note-editable.panel-body a,
 .text-widget-content a {
-    color: ;
     text-decoration: none;
 }
 
 .note-editable.panel-body a:hover,
 .text-widget-content a:hover {
-    color: ;
     text-decoration: none;
 }
 

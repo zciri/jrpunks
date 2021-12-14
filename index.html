@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="dns-prefetch" href="https://static.web-repository.com">
     <link rel="preconnect" href="https://static.web-repository.com">
@@ -51,6 +51,38 @@
             };
         }
     </script>
+
+
+    <script>
+        var countDownDate = new Date("Dec 17, 2021 8:00:00").getTime();
+
+
+        var x = setInterval(function() {
+
+
+            var now = new Date().getTime();
+
+
+            var distance = countDownDate - now;
+
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+            document.getElementById("COUNTDOWN").innerHTML = "⏰ " + days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s " + "⏰";
+
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("COUNTDOWN").innerHTML = "PRESALE IS LIVE! 🔥🔥🔥";
+            }
+        }, 1000);
+    </script>
+
     <link href="https://static.web-repository.com/styles/platform.client.min.css?v=855" type="text/css" rel="stylesheet" />
     <link rel="preload stylesheet" as="style" href="https://static.web-repository.com/t/theme25/css/trunk.min.css?v=855" id="style-default" class="stylesheet" />
 
@@ -211,7 +243,7 @@
                                                 <div class="overlay overlay-scale " style="background: rgba(255, 255, 255, 1)">
 
                                                     <nav class="mobile-headerBackgroundImage">
-                                                        
+
                                                         <ul class="clearfix">
 
 
@@ -365,7 +397,7 @@
       
       background-image: none;">
                         <div class="grid-content ">
-                            <div class="grid-column  justify-center  " style="width: 57%;
+                            <div class="grid-column  justify-center  " style="width: 50%;
                  padding-left:0%;padding-right:0px;background-color: transparent;
                  background-image: none;
                  
@@ -381,13 +413,13 @@
                                     <div class="widget 
           widgetResponsive textWidget headingWidget col20" id="heading-widget-1638312706021" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0%; margin-left: 0px;">
                                         <div class="text-widget-content">
-                                            <h3 style="text-align: center; line-height: 1.4;"><span style="color: rgb(255, 255, 255); font-size: 24px; font-weight: 700; font-family: game;">COUNTDOWN TO PRE-SALE</span></h3>
+                                            <h3 style="text-align: center; line-height: 5;"><span style="color: rgb(255, 255, 255); font-size: 24px; font-weight: 700; ">COUNTDOWN TO PRE-SALE</span></h3>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-column  justify-center  " style="width: 43%;
-                 padding-left:2%;padding-right:2%;background-color: transparent;
+                            <div class="grid-column  justify-center  " style="width: 50%;
+                 padding-left:0%;padding-right:0%;background-color: transparent;
                  background-image: none;
                  
                    background-size: cover;
@@ -398,26 +430,11 @@
                  
                  ">
 
-                                <div class="widget-row with-centered-content">
-                                    <div class="widget 
-          widgetResponsive countdownWidget col20" id="countdown-widget-1638312706020" data-type="CountdownWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 6.75991%; margin-left: 0px;">
-                                        <div class="main-widget-content">
-                                            <div class="flip-wrapper col20 f-left flip-at-center flip-medium flip-with-labels  ">
-                                                <div class="flip-countdown" data-type="date" data-date="1639756800000" data-hours="931" data-minutes="52" data-seconds="2" data-start="100" data-end="0" data-interval="1" data-reset="false" data-link="/Book-A-Call" data-target="_self" data-onend="" data-showdays="true"
-                                                    data-showseconds="true" data-color="rgba(255, 255, 255, 1)" data-labelcolor="rgba(255, 255, 255, 1)" data-labelsize="14" data-bgcolor="transparent" data-size="43" data-uid="1638312706020"></div>
-                                                <div class="flip-countdown-end none-soft col20 f-left">
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="widget-row ">
                                     <div class="widget 
-          
-         widgetResponsive spacer col20" id="spacer-widget-1638312706017" data-type="Spacer" style="margin-top: 0px; margin-left: 0px;">
-                                        <div class="widget-preserving-ratio-outer" style="padding-bottom: 6.0606060606060606% ">
-                                            <div class="widget-preserving-ratio-inner"></div>
+widgetResponsive textWidget headingWidget col20" id="heading-widget-1638312706021" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0%; margin-left: 0px;">
+                                        <div class="text-widget-content">
+                                            <h3 style="text-align: center; line-height: 1.4; color: rgb(255, 255, 255);" id="COUNTDOWN"></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -434,7 +451,7 @@
       
       background-image: none;">
                         <div class="grid-content ">
-                            <div class="grid-column  justify-center  " style="width: 57%;
+                            <div class="grid-column  justify-center  " style="width: 50%;
                  padding-left:0%;padding-right:0px;background-color: transparent;
                  background-image: none;
                  
@@ -450,12 +467,12 @@
                                     <div class="widget 
          mobile-only  widgetResponsive textWidget headingWidget col20" id="heading-widget-1638652888996" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0%; margin-left: 0px;">
                                         <div class="text-widget-content">
-                                            <h3 style="text-align: center; line-height: 1.4;"><span style="color: rgb(255, 255, 255); font-size: 15px; font-weight: 700; font-family: game;">COUNTDOWN TO PRE-SALE</span></h3>
+                                            <h3 style="text-align: center; line-height: 1.4;"><span style="color: rgb(255, 255, 255); font-size: 25px; font-weight: 700; font-family: game;">COUNTDOWN TO PRE-SALE</span></h3>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-column  justify-center  " style="width: 43%;
+                            <div class="grid-column  justify-center  " style="width: 50%;
                  padding-left:2%;padding-right:2%;background-color: transparent;
                  background-image: none;
                  
@@ -469,23 +486,49 @@
 
                                 <div class="widget-row with-centered-content">
                                     <div class="widget 
-         mobile-only  widgetResponsive countdownWidget col20" id="countdown-widget-1638652888995" data-type="CountdownWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0%; margin-left: 0px;">
+widgetResponsive countdownWidget col20" id="countdown-widget-1638312706020" data-type="CountdownWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 6.75991%; margin-left: 0px;">
                                         <div class="main-widget-content">
-                                            <div class="flip-wrapper col20 f-left flip-at-center flip-medium flip-with-labels  ">
-                                                <div class="flip-countdown" data-type="date" data-date="1639756800000" data-hours="931" data-minutes="52" data-seconds="2" data-start="100" data-end="0" data-interval="1" data-reset="false" data-link="/Book-A-Call" data-target="_self" data-onend="" data-showdays="true"
-                                                    data-showseconds="true" data-color="rgba(255, 255, 255, 1)" data-labelcolor="rgba(255, 255, 255, 1)" data-labelsize="14" data-bgcolor="transparent" data-size="43" data-uid="1638652888995"></div>
-                                                <div class="flip-countdown-end none-soft col20 f-left">
-                                                    <div class="text-widget-content">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <p id="cd" style="color: rgb(255, 255, 255); font-size: 25px; font-weight: 700; font-family: game; text-align: center; line-height: 1.4;"></p>
+
+                                            <script>
+                                                var countDownDate = new Date("Dec 17, 2021 8:00:00").getTime();
+
+                                                var x = setInterval(function() {
+
+                                                    var now = new Date().getTime();
+
+                                                    var distance = countDownDate - now;
+
+                                                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+                                                    document.getElementById("cd").innerHTML = days + "d " + hours + "h " +
+                                                        minutes + "m " + seconds + "s ";
+
+                                                    if (distance < 0) {
+                                                        clearInterval(x);
+                                                        document.getElementById("cd").innerHTML = "EXPIRED";
+                                                    }
+                                                }, 1000);
+                                            </script>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+
+
+
+
+
+
+
                     <div id="container-widget-1638311029438" data-type="Container" class="grid-row 
        grid-row-fullwidth phone-hidden tablet-hidden stretched-mobile stretched-tablet" data-delay="" style="padding-bottom:3%;
       padding-top: 3.40136%; padding-left: 0;
@@ -781,6 +824,19 @@
                                     </div>
                                 </section>
                                 <section class=" bg-color-secondary1 " style="">
+                                    <p class="toggle-header " style="font-family: 'game'; font-size: 15px; color:rgb(255, 255, 255);">What does the Road Map look like for the Junior Punks?</p>
+                                    <div class="toggle-widget-content-wrapper">
+                                        <div class="toggle-widget-content text-widget-content  bg-color-secondary1 " style="">
+                                            <div class="col20 f-left">
+                                                <p style="line-height: 2;"><span style="font-family: game;"><span style="color: rgb(255, 255, 255); background-color: transparent; font-size: 12px;">📈 MARKETING PUSH 📈 : Using our extensive network of celebrity and influencer connections paired with our 6-figure marketing budget, we will push out Junior Punks to the world! Nobody in the NFT community will be able to scroll through their feed without seeing Junior Punks over and over again! This will attract large community to the Discord and amplify our events!<br></span></span>
+                                                    <p style="line-height: 2;"><span style="font-family: game;"><span style="color: rgb(255, 255, 255); background-color: transparent; font-size: 12px;"><br>🖥️ DISCORD EVENTS 🖥️: We have 555 Whitelist spots to giveaway to our community! Everybody will have a chance to earn a spot by participating in our quizzes and games that will be hosted on our Discord. Winners of these events will also get prizes such as free Junior Punks and even exclusive 1/1 NFTs.<br></span></span>
+                                                        <p style="line-height: 2;"><span style="font-family: game;"><span style="color: rgb(255, 255, 255); background-color: transparent; font-size: 12px;"><br>🔥 1 OF 1 NFTS 🔥: There are 15 1 of 1 NFT's and 5 will have a special giveaway attached! The biggest NFT prize is the Elon, whoever mints it will get a Tesla! Make sure your'e also staying active in the chat, tuning into AMA's and participating in the quizzes to win other prizes.<br></span></span>
+                                                        </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class=" bg-color-secondary1 " style="">
                                     <p class="toggle-header " style="font-family: 'game'; font-size: 15px; color:rgba(255, 255, 255, 1);">When is the release date?</p>
                                     <div class="toggle-widget-content-wrapper">
                                         <div class="toggle-widget-content text-widget-content  bg-color-secondary1 " style="">
@@ -821,6 +877,7 @@
                                         </div>
                                     </div>
                                 </section>
+
                             </div>
                         </div>
                     </div>
@@ -968,6 +1025,191 @@
         </div>
     </div>
     <div id="container-widget-1638653581206" data-type="Container" class="grid-row 
+    stretched-mobile stretched-tablet" data-delay="" style="padding-bottom:1.97765%;
+   padding-top: 1.44275%; padding-left: 0;
+   background-color: rgba(0, 0, 0, 1);
+     background-position: center center;
+     background-repeat: repeat;
+     background-size: auto;
+     background-attachment: fixed;
+   background-image: url('https://content.app-sources.com/s/94525561323633862/uploads/Images/CLOUDS_1400x1400_SCATTER_v3-9181529.png');">
+        <div class="grid-content ">
+            <div class="grid-column    " style="width: 29.9636%;
+              padding-left:0px;padding-right:0px;
+              background-image: none;
+              background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+              
+              top: 0px;
+              
+              ">
+
+                <div class="widget-row ">
+                    <div class="widget 
+       widgetResponsive imageWidget col20" id="image-widget-1638653581205" data-type="ImageWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-0" style="margin-top: 0px; margin-left: 0px;">
+
+                        <div class="image-box  image-position-default" style="max-width: 330px;">
+                            <div class="widget-preserving-ratio-outer " style="padding-bottom: 63.030303030303024%">
+
+                                <div class="widget-preserving-ratio-inner" data-slide="https://content.app-sources.com/s/94525561323633862/uploads/Images/15-8332220.PNG">
+                                    <a class="lazyImage flex flex-col
+             image-fit">
+                                        <img src="https://content.app-sources.com/s/94525561323633862/uploads/Images/15-8332220.PNG" class="flex-none" alt="" style="" loading="lazy" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-row with-centered-content">
+                    <div class="widget 
+       widgetResponsive textWidget headingWidget col20" id="heading-widget-1638653581204" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 6%; margin-left: 0%;">
+                        <div class="text-widget-content">
+                            <h3 style="text-align: center;"><span style="font-weight: 700; color: rgb(0, 0, 0); font-family: game; font-size: 18px;">Junior Jon</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-row with-centered-content">
+                    <div class="widget 
+       widgetResponsive textWidget col20" id="text-widget-1638653581203" data-type="TextWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0.30303%; margin-left: 0%;">
+                        <div class="text-widget-content">
+                            <p style="text-align: center; "><span style="font-family: game; font-size: 12px;" class="color-secondary1">CO-FOUNDER</span></p>
+                            <p style="text-align: center; "><span style="font-family: game; font-size: 12px;" class="color-secondary1">@TheBlondeJon</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-column  grid-column-no-widgets   " style="width: 4.91803%;
+              padding-left:0px;padding-right:0px;background-color: transparent;
+              background-image: none;
+              
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+              
+              top: 0px;
+              
+              ">
+
+                <div class="widget-row ">
+                </div>
+            </div>
+            <div class="grid-column  justify-flex-start  " style="width: 29.9636%;
+              padding-left:0px;padding-right:0px;background-color: transparent;
+              background-image: none;
+              
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+              border-width: 0px;box-shadow: nullpx nullpx nullpx nullpx  none;border-radius: 0px;
+              top: 0px;
+              border-color:transparent
+              ">
+
+                <div class="widget-row ">
+                    <div class="widget 
+       widgetResponsive imageWidget col20" id="image-widget-1638653581202" data-type="ImageWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-0" style="margin-top: 0px; margin-left: 0px;">
+
+                        <div class="image-box  image-position-default" style="max-width: 330px;">
+                            <div class="widget-preserving-ratio-outer " style="padding-bottom: 62.727272727272734%">
+
+                                <div class="widget-preserving-ratio-inner" data-slide="https://content.app-sources.com/s/94525561323633862/uploads/Images/IMG_3668-8332375.jpg">
+                                    <a class="lazyImage flex flex-col
+             image-fit">
+                                        <img src="https://content.app-sources.com/s/94525561323633862/thumbnails/640x480/Images/IMG_3668-8332375.jpg" class="flex-none" alt="" style="box-shadow: 0px 0px 149px 29px rgba(170, 170, 170, 0.25) ;" loading="lazy" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-row with-centered-content">
+                    <div class="widget 
+       widgetResponsive textWidget headingWidget col20" id="heading-widget-1638653581201" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 5%; margin-left: 0%;">
+                        <div class="text-widget-content">
+                            <h3 style="text-align: center;"><span style="font-weight: 700; color: rgb(0, 0, 0); font-family: game; font-size: 18px;">Junior Joey</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-row with-centered-content">
+                    <div class="widget 
+       widgetResponsive textWidget col20" id="text-widget-1638653581200" data-type="TextWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0%; margin-left: 0%;">
+                        <div class="text-widget-content">
+                            <p style="text-align: center; "><span style="font-size: 12px; font-family: game;" class="color-secondary1">CO-FOUNDER</span></p>
+                            <p style="text-align: center; "><span style="font-size: 12px; font-family: game;" class="color-secondary1">@Joeysendz</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-column  grid-column-no-widgets   " style="width: 4.91803%;
+              padding-left:0px;padding-right:0px;
+              background-image: none;
+              
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+              
+              top: 0px;
+              
+              ">
+
+                <div class="widget-row ">
+                </div>
+            </div>
+            <div class="grid-column    " style="width: 30.2368%;
+              padding-left:0px;padding-right:0px;
+              background-image: none;
+              
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+              
+              top: 0px;
+              
+              ">
+
+                <div class="widget-row ">
+                    <div class="widget 
+       widgetResponsive imageWidget col20" id="image-widget-1638653581199" data-type="ImageWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-0" style="margin-top: 0px; margin-left: 0px;">
+
+                        <div class="image-box  image-position-default" style="max-width: 333px;">
+                            <div class="widget-preserving-ratio-outer " style="padding-bottom: 62.76276276276276%">
+
+                                <div class="widget-preserving-ratio-inner" data-slide="https://content.app-sources.com/s/94525561323633862/uploads/Images/5-8312337.png">
+                                    <a class="lazyImage flex flex-col
+             image-fit">
+                                        <img src="https://content.app-sources.com/s/94525561323633862/uploads/Images/5-8312337.png" class="flex-none" alt="" style="" loading="lazy" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-row with-centered-content">
+                    <div class="widget 
+       widgetResponsive textWidget headingWidget col20" id="heading-widget-1638653581198" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 4%; margin-left: 0%;">
+                        <div class="text-widget-content">
+                            <h3 style="text-align: center;"><span style="font-weight: 700; color: rgb(0, 0, 0); font-family: game; font-size: 18px;">Junior Chaz</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-row with-centered-content">
+                    <div class="widget 
+       widgetResponsive textWidget col20" id="text-widget-1638653581197" data-type="TextWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0%; margin-left: 0%;">
+                        <div class="text-widget-content">
+                            <p style="text-align: center; "><span style="font-size: 12px; font-family: game;" class="color-secondary1">DISCORD EXPERT</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="container-widget-1638653581206" data-type="Container" class="grid-row 
        stretched-mobile stretched-tablet" data-delay="" style="padding-bottom:1.97765%;
       padding-top: 1.44275%; padding-left: 0;
       background-color: rgba(0, 0, 0, 1);
@@ -999,7 +1241,7 @@
                                 <div class="widget-preserving-ratio-inner" data-slide="https://content.app-sources.com/s/94525561323633862/uploads/Images/15-8332220.PNG">
                                     <a class="lazyImage flex flex-col
                 image-fit">
-                                        <img src="https://content.app-sources.com/s/94525561323633862/uploads/Images/15-8332220.PNG" class="flex-none" alt="" style="" loading="lazy" />
+                                        <img src="https://content.app-sources.com/s/94525561323633862/uploads/punks/367-9029527.png" class="flex-none" alt="" style="" loading="lazy" />
                                     </a>
                                 </div>
                             </div>
@@ -1008,21 +1250,21 @@
                 </div>
                 <div class="widget-row with-centered-content">
                     <div class="widget 
-          widgetResponsive textWidget headingWidget col20" id="heading-widget-1638653581204" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 6%; margin-left: 0%;">
+          widgetResponsive textWidget headingWidget col20" id="heading-widget-1638652888851" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 4%; margin-left: 0%;">
                         <div class="text-widget-content">
-                            <h3 style="text-align: center;"><span style="font-weight: 700; color: rgb(0, 0, 0); font-family: game; font-size: 18px;">Junior Jon</span></h3>
+                            <h3 style="text-align: center;"><span style="font-weight: 700; color: rgb(0, 0, 0); font-family: game; font-size: 18px;">Junior Hart</span></h3>
                         </div>
                     </div>
                 </div>
                 <div class="widget-row with-centered-content">
                     <div class="widget 
-          widgetResponsive textWidget col20" id="text-widget-1638653581203" data-type="TextWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0.30303%; margin-left: 0%;">
+          widgetResponsive textWidget col20" id="text-widget-1638652888850" data-type="TextWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0%; margin-left: 0%;">
                         <div class="text-widget-content">
-                            <p style="text-align: center; "><span style="font-family: game; font-size: 12px;" class="color-secondary1">CO-FOUNDER</span></p>
-                            <p style="text-align: center; "><span style="font-family: game; font-size: 12px;" class="color-secondary1">@TheBlondeJon</span></p>
+                            <p style="text-align: center; "><span style="color: rgb(2, 128, 144); font-family: game; font-size: 12px;">COMMUNITY MANAGER</span></p>
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="grid-column  grid-column-no-widgets   " style="width: 4.91803%;
                  padding-left:0px;padding-right:0px;background-color: transparent;
@@ -1061,7 +1303,7 @@
                                 <div class="widget-preserving-ratio-inner" data-slide="https://content.app-sources.com/s/94525561323633862/uploads/Images/IMG_3668-8332375.jpg">
                                     <a class="lazyImage flex flex-col
                 image-fit">
-                                        <img src="https://content.app-sources.com/s/94525561323633862/thumbnails/640x480/Images/IMG_3668-8332375.jpg" class="flex-none" alt="" style="box-shadow: 0px 0px 149px 29px rgba(170, 170, 170, 0.25) ;" loading="lazy" />
+                                        <img src="/imgs/zachPFP.png" class="flex-none" alt="" style="box-shadow: 0px 0px 149px 29px rgba(170, 170, 170, 0.25) ;" loading="lazy" />
                                     </a>
                                 </div>
                             </div>
@@ -1070,21 +1312,22 @@
                 </div>
                 <div class="widget-row with-centered-content">
                     <div class="widget 
-          widgetResponsive textWidget headingWidget col20" id="heading-widget-1638653581201" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 5%; margin-left: 0%;">
+          widgetResponsive textWidget headingWidget col20" id="heading-widget-1638653581204" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 6%; margin-left: 0%;">
                         <div class="text-widget-content">
-                            <h3 style="text-align: center;"><span style="font-weight: 700; color: rgb(0, 0, 0); font-family: game; font-size: 18px;">Junior Joey</span></h3>
+                            <h3 style="text-align: center;"><span style="font-weight: 700; color: rgb(0, 0, 0); font-family: game; font-size: 18px;">Junior Zach</span></h3>
                         </div>
                     </div>
                 </div>
                 <div class="widget-row with-centered-content">
                     <div class="widget 
-          widgetResponsive textWidget col20" id="text-widget-1638653581200" data-type="TextWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0%; margin-left: 0%;">
+          widgetResponsive textWidget col20" id="text-widget-1638653581203" data-type="TextWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0.30303%; margin-left: 0%;">
                         <div class="text-widget-content">
-                            <p style="text-align: center; "><span style="font-size: 12px; font-family: game;" class="color-secondary1">CO-FOUNDER</span></p>
-                            <p style="text-align: center; "><span style="font-size: 12px; font-family: game;" class="color-secondary1">@Joeysendz</span></p>
+                            <p style="text-align: center; "><span style="font-family: game; font-size: 12px;" class="color-secondary1">WEB DEV / DISCORD MOD</span></p>
+                            <p style="text-align: center; "><span style="font-family: game; font-size: 12px;" class="color-secondary1">@ZACHCIRINCIONI</span></p>
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="grid-column  grid-column-no-widgets   " style="width: 4.91803%;
                  padding-left:0px;padding-right:0px;
@@ -1123,7 +1366,7 @@
                                 <div class="widget-preserving-ratio-inner" data-slide="https://content.app-sources.com/s/94525561323633862/uploads/Images/5-8312337.png">
                                     <a class="lazyImage flex flex-col
                 image-fit">
-                                        <img src="https://content.app-sources.com/s/94525561323633862/uploads/Images/5-8312337.png" class="flex-none" alt="" style="" loading="lazy" />
+                                        <img src="/imgs/SpencerPFP.png" class="flex-none" alt="" style="" loading="lazy" />
                                     </a>
                                 </div>
                             </div>
@@ -1132,24 +1375,26 @@
                 </div>
                 <div class="widget-row with-centered-content">
                     <div class="widget 
-          widgetResponsive textWidget headingWidget col20" id="heading-widget-1638653581198" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 4%; margin-left: 0%;">
+          widgetResponsive textWidget headingWidget col20" id="heading-widget-1638653581201" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 5%; margin-left: 0%;">
                         <div class="text-widget-content">
-                            <h3 style="text-align: center;"><span style="font-weight: 700; color: rgb(0, 0, 0); font-family: game; font-size: 18px;">Junior Chaz</span></h3>
+                            <h3 style="text-align: center;"><span style="font-weight: 700; color: rgb(0, 0, 0); font-family: game; font-size: 18px;">Junior Spencer</span></h3>
                         </div>
                     </div>
                 </div>
                 <div class="widget-row with-centered-content">
                     <div class="widget 
-          widgetResponsive textWidget col20" id="text-widget-1638653581197" data-type="TextWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0%; margin-left: 0%;">
+          widgetResponsive textWidget col20" id="text-widget-1638653581200" data-type="TextWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0%; margin-left: 0%;">
                         <div class="text-widget-content">
-                            <p style="text-align: center; "><span style="font-size: 12px; font-family: game;" class="color-secondary1">DISCORD EXPERT</span></p>
+                            <p style="text-align: center; "><span style="font-size: 12px; font-family: game;" class="color-secondary1">WEB DEV / DISCORD MOD</span></p>
+                            <p style="text-align: center; "><span style="font-size: 12px; font-family: game;" class="color-secondary1">@SPENCERPATTERSON01</span></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="container-widget-1638652888859" data-type="Container" class="grid-row 
+
+
+        <div id="container-widget-1638652888859" data-type="Container" class="grid-row 
        stretched-mobile stretched-tablet" data-delay="" style="padding-bottom:1.97765%;
       padding-top: 1.44275%; padding-left: 0;
       background-color: rgba(0, 0, 0, 1);
@@ -1158,8 +1403,8 @@
         background-size: auto;
         background-attachment: fixed;
       background-image: url('https://content.app-sources.com/s/94525561323633862/uploads/Images/CLOUDS_1400x1400_SCATTER_v3-9181529.png');">
-        <div class="grid-content ">
-            <div class="grid-column    " style="width: 29.9636%;
+            <div class="grid-content ">
+                <div class="grid-column    " style="width: 29.9636%;
                  padding-left:0px;padding-right:0px;
                  background-image: none;
                  background-attachment: fixed;
@@ -1171,42 +1416,42 @@
                  
                  ">
 
-                <div class="widget-row ">
-                    <div class="widget 
+                    <div class="widget-row ">
+                        <div class="widget 
           widgetResponsive imageWidget col20" id="image-widget-1638652888858" data-type="ImageWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-0" style="margin-top: 0px; margin-left: 0px;">
 
-                        <div class="image-box  image-position-default" style="max-width: 330px;">
-                            <div class="widget-preserving-ratio-outer " style="padding-bottom: 63.030303030303024%">
+                            <div class="image-box  image-position-default" style="max-width: 330px;">
+                                <div class="widget-preserving-ratio-outer " style="padding-bottom: 63.030303030303024%">
 
-                                <div class="widget-preserving-ratio-inner" data-slide="https://content.app-sources.com/s/94525561323633862/uploads/punks/1788-9029583.png">
-                                    <a class="lazyImage flex flex-col
+                                    <div class="widget-preserving-ratio-inner" data-slide="https://content.app-sources.com/s/94525561323633862/uploads/punks/1788-9029583.png">
+                                        <a class="lazyImage flex flex-col
                 image-fit">
-                                        <img src="https://content.app-sources.com/s/94525561323633862/uploads/punks/1788-9029583.png" class="flex-none" alt="" style="" loading="lazy" />
-                                    </a>
+                                            <img src="https://content.app-sources.com/s/94525561323633862/uploads/punks/1788-9029583.png" class="flex-none" alt="" style="" loading="lazy" />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="widget-row with-centered-content">
-                    <div class="widget 
+                    <div class="widget-row with-centered-content">
+                        <div class="widget 
           widgetResponsive textWidget headingWidget col20" id="heading-widget-1638652888857" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 6%; margin-left: 0%;">
-                        <div class="text-widget-content">
-                            <h3 style="text-align: center;"><span style="font-weight: 700; color: rgb(0, 0, 0); font-family: game; font-size: 18px;">Junior Sam</span></h3>
+                            <div class="text-widget-content">
+                                <h3 style="text-align: center;"><span style="font-weight: 700; color: rgb(0, 0, 0); font-family: game; font-size: 18px;">Junior Sam</span></h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="widget-row with-centered-content">
-                    <div class="widget 
+                    <div class="widget-row with-centered-content">
+                        <div class="widget 
           widgetResponsive textWidget col20" id="text-widget-1638652888856" data-type="TextWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0.30303%; margin-left: 0%;">
-                        <div class="text-widget-content">
-                            <p style="text-align: center; "><span style="color: rgb(2, 128, 144); font-family: game; font-size: 12px;">WEB DEVELOPER</span></p>
+                            <div class="text-widget-content">
+                                <p style="text-align: center; "><span style="color: rgb(2, 128, 144); font-family: game; font-size: 12px;">WEB DEVELOPER</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid-column  grid-column-no-widgets   " style="width: 4.91803%;
+                <div class="grid-column  grid-column-no-widgets   " style="width: 4.91803%;
                  padding-left:0px;padding-right:0px;background-color: transparent;
                  background-image: none;
                  
@@ -1218,10 +1463,10 @@
                  
                  ">
 
-                <div class="widget-row ">
+                    <div class="widget-row ">
+                    </div>
                 </div>
-            </div>
-            <div class="grid-column  justify-flex-start  " style="width: 29.9636%;
+                <div class="grid-column  justify-flex-start  " style="width: 29.9636%;
                  padding-left:0px;padding-right:0px;background-color: transparent;
                  background-image: none;
                  
@@ -1233,41 +1478,41 @@
                  border-color:transparent
                  ">
 
-                <div class="widget-row ">
-                    <div class="widget 
+                    <div class="widget-row ">
+                        <div class="widget 
           widgetResponsive imageWidget col20" id="image-widget-1638652888855" data-type="ImageWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-0" style="margin-top: 0px; margin-left: 0px;">
 
-                        <div class="image-box  image-position-default" style="max-width: 330px;">
-                            <div class="widget-preserving-ratio-outer " style="padding-bottom: 62.727272727272734%">
+                            <div class="image-box  image-position-default" style="max-width: 330px;">
+                                <div class="widget-preserving-ratio-outer " style="padding-bottom: 62.727272727272734%">
 
-                                <div class="widget-preserving-ratio-inner" data-slide="https://content.app-sources.com/s/94525561323633862/uploads/punks/1158-9029555.png">
-                                    <a class="lazyImage flex flex-col
+                                    <div class="widget-preserving-ratio-inner" data-slide="https://content.app-sources.com/s/94525561323633862/uploads/punks/1158-9029555.png">
+                                        <a class="lazyImage flex flex-col
                 image-fit">
-                                        <img src="https://content.app-sources.com/s/94525561323633862/uploads/punks/1158-9029555.png" class="flex-none" alt="" style="box-shadow: 0px 0px 149px 29px rgba(170, 170, 170, 0.25) ;" loading="lazy" />
-                                    </a>
+                                            <img src="https://content.app-sources.com/s/94525561323633862/uploads/punks/1158-9029555.png" class="flex-none" alt="" style="box-shadow: 0px 0px 149px 29px rgba(170, 170, 170, 0.25) ;" loading="lazy" />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="widget-row with-centered-content">
-                    <div class="widget 
+                    <div class="widget-row with-centered-content">
+                        <div class="widget 
           widgetResponsive textWidget headingWidget col20" id="heading-widget-1638652888854" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 5%; margin-left: 0%;">
-                        <div class="text-widget-content">
-                            <h3 style="text-align: center;"><span style="font-weight: 700; color: rgb(0, 0, 0); font-family: game; font-size: 18px;">Junior Jacob</span></h3>
+                            <div class="text-widget-content">
+                                <h3 style="text-align: center;"><span style="font-weight: 700; color: rgb(0, 0, 0); font-family: game; font-size: 18px;">Junior Jacob</span></h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="widget-row with-centered-content">
-                    <div class="widget 
+                    <div class="widget-row with-centered-content">
+                        <div class="widget 
           widgetResponsive textWidget col20" id="text-widget-1638652888853" data-type="TextWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0%; margin-left: 0%;">
-                        <div class="text-widget-content">
-                            <p style="text-align: center; "><span style="color: rgb(2, 128, 144); font-family: game; font-size: 12px;">MARKETING EXPERT</span></p>
+                            <div class="text-widget-content">
+                                <p style="text-align: center; "><span style="color: rgb(2, 128, 144); font-family: game; font-size: 12px;">MARKETING EXPERT</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="grid-column  grid-column-no-widgets   " style="width: 4.91803%;
+                <div class="grid-column  grid-column-no-widgets   " style="width: 4.91803%;
                  padding-left:0px;padding-right:0px;
                  background-image: none;
                  
@@ -1279,10 +1524,10 @@
                  
                  ">
 
-                <div class="widget-row ">
+                    <div class="widget-row ">
+                    </div>
                 </div>
-            </div>
-            <div class="grid-column    " style="width: 30.2368%;
+                <div class="grid-column    " style="width: 30.2368%;
                  padding-left:0px;padding-right:0px;
                  background-image: none;
                  
@@ -1294,39 +1539,44 @@
                  
                  ">
 
-                <div class="widget-row ">
-                    <div class="widget 
+                    <div class="widget-row ">
+                        <div class="widget 
           widgetResponsive imageWidget col20" id="image-widget-1638652888852" data-type="ImageWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-0" style="margin-top: 0px; margin-left: 0px;">
 
-                        <div class="image-box  image-position-default" style="max-width: 333px;">
-                            <div class="widget-preserving-ratio-outer " style="padding-bottom: 62.76276276276276%">
+                            <div class="image-box  image-position-default" style="max-width: 333px;">
+                                <div class="widget-preserving-ratio-outer " style="padding-bottom: 62.76276276276276%">
 
-                                <div class="widget-preserving-ratio-inner" data-slide="https://content.app-sources.com/s/94525561323633862/uploads/punks/367-9029527.png">
-                                    <a class="lazyImage flex flex-col
+                                    <div class="widget-preserving-ratio-inner" data-slide="https://content.app-sources.com/s/94525561323633862/uploads/punks/367-9029527.png">
+                                        <a class="lazyImage flex flex-col
                 image-fit">
-                                        <img src="https://content.app-sources.com/s/94525561323633862/uploads/punks/367-9029527.png" class="flex-none" alt="" style="" loading="lazy" />
-                                    </a>
+                                            <img src="/imgs/parkerPFP.png" class="flex-none" alt="" style="" loading="lazy" />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="widget-row with-centered-content">
-                    <div class="widget 
-          widgetResponsive textWidget headingWidget col20" id="heading-widget-1638652888851" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 4%; margin-left: 0%;">
-                        <div class="text-widget-content">
-                            <h3 style="text-align: center;"><span style="font-weight: 700; color: rgb(0, 0, 0); font-family: game; font-size: 18px;">Junior Hart</span></h3>
+
+
+                    <div class="widget-row with-centered-content">
+                        <div class="widget 
+          widgetResponsive textWidget headingWidget col20" id="heading-widget-1638653581198" data-type="HeadingWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 4%; margin-left: 0%;">
+                            <div class="text-widget-content">
+                                <h3 style="text-align: center;"><span style="font-weight: 700; color: rgb(0, 0, 0); font-family: game; font-size: 18px;">Junior Parker</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-row with-centered-content">
+                        <div class="widget 
+          widgetResponsive textWidget col20" id="text-widget-1638653581197" data-type="TextWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0%; margin-left: 0%;">
+                            <div class="text-widget-content">
+                                <p style="text-align: center; "><span style="font-size: 12px; font-family: game;" class="color-secondary1">DISCORD MOD</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="widget-row with-centered-content">
-                    <div class="widget 
-          widgetResponsive textWidget col20" id="text-widget-1638652888850" data-type="TextWidget" data-delay="" data-animation-duration="" data-animation-delay="" data-animation="lazyAnimation-" style="margin-top: 0%; margin-left: 0%;">
-                        <div class="text-widget-content">
-                            <p style="text-align: center; "><span style="color: rgb(2, 128, 144); font-family: game; font-size: 12px;">COMMUNITY MANAGER</span></p>
-                        </div>
-                    </div>
-                </div>
+
+
             </div>
         </div>
     </div>
@@ -1496,6 +1746,11 @@ background-image: none;">
 
             <script type="text/javascript" src="https://static.web-repository.com/scripts/platform.client.min.js?v=855"></script>
             <!-- */ <!-- -->
+
+
+
+
+
 
 </body>
 
